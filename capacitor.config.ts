@@ -25,6 +25,10 @@ const config: CapacitorConfig = {
   android: {
     // El overscroll/glow de Android no combina con una app de finanzas.
     allowMixedContent: false,
+    // Android 15+ fuerza edge-to-edge: sin esto el WebView se dibuja DEBAJO
+    // de la barra de estado y el contenido choca con el hueco de la cámara.
+    // 'auto' agrega los márgenes del sistema solo cuando hace falta.
+    adjustMarginsForEdgeToEdge: 'auto',
   },
 };
 
