@@ -16,9 +16,10 @@ const config: CapacitorConfig = {
   appName: 'LanaClara',
   webDir: 'www', // placeholder; la app real viene de server.url
   server: {
-    url: 'https://app.lanaclara.com',
-    // Solo HTTPS: nada de tráfico en claro.
-    cleartext: false,
+    // Entra por /inicio (no la landing de marketing): con sesión enruta a tu
+    // inicio/tablero según el giro; sin sesión, el proxy manda a /login.
+    url: 'https://app.lanaclara.com/inicio',
+    cleartext: false, // solo HTTPS
     androidScheme: 'https',
   },
   android: {
