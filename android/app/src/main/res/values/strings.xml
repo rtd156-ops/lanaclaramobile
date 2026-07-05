@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LanaClara</string>
+    <string name="title_activity_main">LanaClara</string>
+    <string name="package_name">com.lanaclara.app</string>
+    <string name="custom_url_scheme">com.lanaclara.app</string>
+</resources>
