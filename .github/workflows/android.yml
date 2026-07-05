@@ -20,11 +20,11 @@ jobs:
           node-version: 22 # Capacitor CLI exige Node >= 22
           cache: npm
 
-      - name: JDK 17
+      - name: JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 21 # Capacitor Android compila con source release 21
 
       - name: SDK de Android
         uses: android-actions/setup-android@v3
